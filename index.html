@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pretty Britty</title>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Orbitron :wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>Pretty Britty</h1>
+
+  <div class="container">
+    <!-- Dress Up Area -->
+    <div id="dress-up-area">
+      <div class="backdrop"></div>
+      <img src="images/character.png" alt="Character" class="character" id="main-character" />
+
+      <!-- Sample Items -->
+      <img src="images/hat1.png" alt="Hat" class="item" draggable="true" style="top: 150px; left: 250px;" />
+      <img src="images/top1.png" alt="Top" class="item" draggable="true" style="top: 250px; left: 230px;" />
+      <img src="images/bottom1.png" alt="Bottom" class="item" draggable="true" style="top: 350px; left: 230px;" />
+      <img src="images/shoes1.png" alt="Shoes" class="item" draggable="true" style="top: 500px; left: 230px;" />
+    </div>
+
+    <!-- Outfit Selection Panel -->
+    <div class="outfit-panel">
+      <div class="category">
+        <label for="hats">Hats</label>
+        <div class="items" id="hats">
+          <img src="images/hat1.png" data-type="hat" />
+          <img src="images/hat2.png" data-type="hat" />
+        </div>
+      </div>
+
+      <div class="category">
+        <label for="tops">Tops</label>
+        <div class="items" id="tops">
+          <img src="images/top1.png" data-type="top" />
+          <img src="images/top2.png" data-type="top" />
+        </div>
+      </div>
+
+      <div class="category">
+        <label for="bottoms">Bottoms</label>
+        <div class="items" id="bottoms">
+          <img src="images/bottom1.png" data-type="bottom" />
+          <img src="images/bottom2.png" data-type="bottom" />
+        </div>
+      </div>
+
+      <div class="category">
+        <label for="shoes">Shoes</label>
+        <div class="items" id="shoes">
+          <img src="images/shoes1.png" data-type="shoes" />
+          <img src="images/shoes2.png" data-type="shoes" />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Background Music -->
+  <audio id="bg-music" loop>
+    <source src="audio/rap-music.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+  <!-- Sound Effects -->
+  <audio id="item-sound">
+    <source src="audio/item-sound.mp3" type="audio/mpeg">
+  </audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
