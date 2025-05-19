@@ -1,0 +1,113 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Orbitron', sans-serif;
+  background: linear-gradient(135deg, #ff6ec4, #7873f5);
+  color: #fff;
+  overflow-x: hidden;
+}
+
+h1 {
+  text-align: center;
+  font-family: 'Great Vibes', cursive;
+  font-size: 36px;
+  color: #ff69b4;
+  text-shadow: 0 0 10px #ff69b4, 0 0 20px #ff1493;
+  margin-top: 10px;
+  padding: 10px;
+}
+
+.container {
+  max-width: 100%;
+  margin: auto;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#dress-up-area {
+  position: relative;
+  width: 90vw;
+  height: 70vh;
+  max-width: 600px;
+  max-height: 800px;
+  margin: auto;
+  background: rgba(255, 255, 255, 0.05);
+  border: 2px solid #ff69b4;
+  box-shadow: 0 0 20px #ff69b4;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.backdrop {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 280px;
+  height: 500px;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 0;
+  border-radius: 10px;
+}
+
+.character {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60%;
+  z-index: 1;
+  box-shadow: 0 0 10px #fff;
+}
+
+.item {
+  position: absolute;
+  cursor: grab;
+  z-index: 10;
+  transition: transform 0.2s ease;
+  width: 15%;
+}
+
+.item:active {
+  cursor: grabbing;
+}
+
+.outfit-panel {
+  width: 90%;
+  max-width: 500px;
+  margin-top: 20px;
+}
+
+.category label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #ff1493;
+  text-shadow: 0 0 5px #ff1493;
+}
+
+.items {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.items img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.items img:hover {
+  border-color: #ff1493;
+  box-shadow: 0 0 10px #ff1493, 0 0 20px #ff1493;
+}
